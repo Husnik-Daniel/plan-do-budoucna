@@ -1,0 +1,87 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    color: #003366;
+  }
+  
+  section {
+    margin-bottom: 50px;
+  }
+  
+  section h2 {
+    font-size: 2em;
+    color: #003366;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  /* Kontejner pro karty */
+  .radek {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Jednotlivá karta */
+  .karta {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .karta:hover {
+    transform: scale(1.05);
+  }
+  
+  .karta img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .karta ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .karta ul li {
+    margin-bottom: 8px;
+  }
+  
+  /* Responzivita */
+  @media (max-width: 992px) {
+    .karta {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .karta {
+      width: 100%;
+    }
+  }
+  
+  
