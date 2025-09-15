@@ -84,4 +84,25 @@
     }
   }
   
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1em;
+    text-align: center;
+  }
   
+  table th,
+  table td {
+    border: 1px solid #003366;
+    padding: 12px;
+  }
+  
+  table th {
+    background-color: #003366;
+    color: white;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
